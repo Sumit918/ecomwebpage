@@ -1,10 +1,10 @@
-/* Css for the body */
+/* Set background color and font family for the whole body */
 body {
   background-color: #f2f2f2;
   font-family: "Raleway", sans-serif;
 }
 
-/* Css for the Header */
+/* Css for the Header that positions header fixed to the top of the page */
 header {
   position: fixed;
   top: 0;
@@ -13,23 +13,24 @@ header {
   z-index: 999;
 }
 
-/* Css for the top nav bar */
+/* Css stylesheets for  the top navigation bar */
 .top-nav {
-  background-color: #0D0D0D; /*Changes the background color*/
-  height: 120px; /* Height for the Top nav bar */
-  border-radius: 0px 0px 10px 10px; /* The radius Styling used for the top nav bar*/
-  filter: drop-shadow(0px 4px 4px #00000040); /* Dropped shadow to make the top bar pop up in the page*/
+  background-color: #0d0d0d;
+  height: 120px;
+  border-radius: 0px 0px 10px 10px;
+  filter: drop-shadow(0px 4px 4px #00000040);
 }
 
-/* Css for the Header Logo  */
+/* Css stylesheets for the Logo in the header position height and width */
 .HeaderLogo {
-  position: absolute; /* Sets the position absolute */
-  width: 307px; /* sets the width of the logo.png image*/
-  height: 55px; /* Sets the height of the logo.png image*/
-  left: 156px; /* The amount of pixel that image is shifted to the left to right on the screen */
-  top: 33px; /* The amount of pixel that logo is shifted down from top of the screen*/
+  position: absolute;
+  width: 307px;
+  height: 55px;
+  left: 156px;
+  top: 33px;
 }
 
+/* Css for the account icon container*/
 .myaccount {
   position: absolute;
   width: 55px;
@@ -37,10 +38,10 @@ header {
   left: 1620px;
   top: 33px;
   text-align: center;
-  
   filter: invert(1);
   border-radius: 30px;
 }
+/* Css for the cart icon container */
 .mycart {
   position: absolute;
   width: 55px;
@@ -48,37 +49,31 @@ header {
   left: 1770px;
   top: 33px;
   text-align: center;
-  
+
   filter: invert(1);
   border-radius: 30px;
 }
-.Navbaricon{
+/* Css to align the icon of the cart and account to the center  */
+.Navbaricon {
   margin-top: 25%;
 }
 
+/* Css for the hover effect on the account and cart icons */
 
-  
-
-.myaccount:hover{
-
+.myaccount:hover {
   filter: invert(0);
   background-color: #f2f2f2;
-  transition: 0.3s all ;
-
+  transition: 0.3s all;
 }
-.mycart:hover{
-
+.mycart:hover {
   filter: invert(0);
   background-color: #f2f2f2;
-  transition: 0.3s all ;
+  transition: 0.3s all;
+}
 
-}
-.search {
-  
-}
 /*Css for the Search bar*/
 .search-bar {
-  position: relative; /*Position saved to relative*/
+  position: relative;
   display: inline-block;
   padding-top: 10px;
   height: 66px;
@@ -97,7 +92,7 @@ header {
 }
 /* Css to disable outline displayed on the search bar while inputting the text */
 .search-bar input[type="text"]:focus {
-  outline: none; 
+  outline: none;
 }
 /* Css for the Submit button which is the Search icon */
 .search-bar button[type="submit"] {
@@ -110,7 +105,7 @@ header {
   color: #343140;
   font-size: 16px;
 }
-/* Css to convert the mouse cursor to pointer while hovering around the submit button/icon */
+/* Css to convert the mouse cursor to pointer while hovering around the submit button icon */
 .search-bar button[type="submit"]:hover {
   cursor: pointer;
 }
@@ -129,9 +124,8 @@ header {
 /* hide bottom layer on scroll uses javascript uses */
 header.scrolled .bottom-nav {
   display: none;
- 
 }
-/*  */
+/*Css for the flex container of the bottom navigation bar*/
 .fContainer {
   display: flex;
   position: absolute;
@@ -143,9 +137,7 @@ header.scrolled .bottom-nav {
   justify-content: space-evenly;
 }
 
-
-
-
+/* Css for the flex items Blog, About us, Research */
 .fItem {
   margin: 12px;
   width: 99.71px;
@@ -156,25 +148,22 @@ header.scrolled .bottom-nav {
   line-height: 21px;
   text-align: center;
 }
-
-
-
-
-
+/* Css for the a href tag of the flex items */
 .fItem a {
   color: White;
   text-decoration: none;
   padding: 10px;
 }
+/*Css for the hover effect of the flex items */
 .fItem:hover {
   background-color: #8c7c5d;
   color: #ffffff;
   padding: 10px;
   border-radius: 20px 20px 20px 20px;
   box-shadow: 0 10px 10px #00000033;
-  transition: 0.3s all ease-in-out ;
+  transition: 0.3s all ease-in-out;
 }
-
+/* Css for the flex item product only */
 .fItem-1 {
   margin: 12px;
   width: 99.71px;
@@ -185,33 +174,30 @@ header.scrolled .bottom-nav {
   line-height: 21px;
   text-align: center;
 }
-
+/* Css for the a tag of the flex item product only */
 .fItem-1 a {
   color: White;
   text-decoration: none;
   padding: 10px;
 }
+/* Css for the  */
 
 .fItem-1:hover {
   background-color: #8c7c5d;
   color: #ffffff;
   padding: 10px;
   border-radius: 20px 20px 20px 20px;
-  transition: 0.3s all ease-in-out ;
+  transition: 0.3s all ease-in-out;
 }
-
-
-
-
 
 /* adjust main content position to avoid overlapping with header */
 main {
   margin-top: 100px;
   /* adjust margin to your preference */
 }
-
+/* Css for the footer section */
 footer {
-  background-color: #0D0D0D;
+  background-color: #0d0d0d;
   position: absolute;
   width: 100%;
   height: 200px;
